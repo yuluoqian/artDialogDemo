@@ -3,11 +3,11 @@
   type="WEB"
   name="artDialogDemo"
   id="myeclipse.1350835960630"
-  context-root="/artDialogDemo"
+  context-root="/art"
   j2ee-spec="5.0"
   archive="artDialogDemo.war">
   <attributes>
-    <attribute name="webrootdir" value="WebRoot" />
+    <attribute name="webrootdir" value="/WebRoot" />
   </attributes>
 </project-module>
 
