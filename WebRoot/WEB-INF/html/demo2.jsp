@@ -30,7 +30,7 @@
 	
 	function test01()
 	{
-		artDialog.tips("1.5秒后关闭")
+		artDialog.tips("等待服务器端响应，返回后自动关闭")
 	 	setTimeout("finish()",3000);
 	}
 	
