@@ -32,14 +32,12 @@
 				);
 			}
 		</script>
-
-	</head>
-	
+</head>
 	<body>
 		${path}
 		<br>
 			登录页面 <br />
-			<div style="border:1px solid red;padding:20px;">
+			<div style="border:1px solid red;padding:20px;margin: 10px;">
 
 				主页面传给子页面上的数据
 				<hr>
@@ -54,5 +52,11 @@
 							<br>
 						   <a href="javascript:opendiv();">弹出子页面</a>
 			</div>
+			
+			
+			<div style="border:1px solid red;padding:20px;margin: 10px;">
+				<a href="${path}/l/demo2.do">第二个示例--修该tips为手动关闭</a>
+			</div>			
+	
 	</body>
 </html>
