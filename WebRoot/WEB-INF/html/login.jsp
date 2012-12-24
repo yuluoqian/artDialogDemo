@@ -4,14 +4,15 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>logon</title>
-		<script src="${path}/js/jquery-1.7.2.js" type="text/javascript"></script>
-		<script src="${path}/art_resource/jquery.artDialog.js?skin=blue"></script>
-		<script src="${path}/art_resource/iframeTools.js"></script>
+		<script src="${path}/resource1/js/jquery-1.7.2.js" type="text/javascript"></script>
+		<script src="${path}/resource1/jquery.artDialog.js?skin=blue"></script>
+		<script src="${path}/resource1/iframeTools.js"></script>
 		<script>
+			
 			$(document).ready(function(){
 				
 			});
-									
+						
 			//弹出子页面
 			function opendiv()
 			{	 	
@@ -52,11 +53,12 @@
 							<br>
 						   <a href="javascript:opendiv();">弹出子页面</a>
 			</div>
-			
-			
+						
 			<div style="border:1px solid red;padding:20px;margin: 10px;">
-				<a href="${path}/l/demo2.do">第二个示例--修该tips为手动关闭</a>
+				<a href="${path}/l/demo2.do">第二个示例--修该tips为手动关闭(就是改为我们可以通过代码控制关闭)</a>
 			</div>			
-	
+						
+		 	
+			
 	</body>
 </html>

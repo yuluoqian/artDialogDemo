@@ -4,10 +4,10 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>logon</title>
-		<script src="${path}/js/jquery-1.7.2.js" type="text/javascript"></script>
-		<script src="${path}/js/common.js" type="text/javascript"></script>
-		<script src="${path}/art_resource/jquery.artDialog.js?skin=blue"></script>
-		<script src="${path}/art_resource/iframeTools.js"></script>
+		<script src="${path}/resource1/js/jquery-1.7.2.js" type="text/javascript"></script>
+		<script src="${path}/resource1/js/common.js" type="text/javascript"></script>
+		<script src="${path}/resource1/jquery.artDialog.js?skin=blue"></script>
+		<script src="${path}/resource1/iframeTools.js"></script>
 		
 		<script>
 	$(document).ready(function() {
@@ -30,10 +30,10 @@
 		var origin=artDialog.open.origin;
 		var returnElement = origin.document.getElementById('returndata');
 		returnElement.value=result['result'];
-		art.dialog.tips("数据取得成功(三秒后关闭)");
+		art.dialog.tips("数据取得成功(1秒后关闭)");
 		
 		//暂停一会再关闭
-		window.setTimeout("closediv()",3000);
+		window.setTimeout("closediv()",1000);
 		
 	}
 	
@@ -58,16 +58,18 @@ div {
 			如果需要更改art的背景颜色-可以更改blue.css中的line39 .aui_inner
 		</p>
 		<div>
-			from 服务器
+			来自父页面的数据
 			<br>
-				username<input name="username" value="${username}">
+				用户名：<input name="username" value="${username}">
 					<br>
-						nickname<input name="nickname" value="${nickname}">
+				昵称：<input name="nickname" value="${nickname}">
 							<br>
 		</div>
 		<br>
 			<div>
-				<input name="age" value="22"  />
+			  	当前弹出层的数据返回给父页面
+			  	<br>
+				年龄： <input name="age" value="22"  />(没做数据验证，请只输入数字)
 				<br>
 					<!-- 当然这里可以使用submit进行提交表单，但是不太好处理返回，因为会刷新页面 -->
 					<input type="button" name="提交" onclick="javascript:submit_m();" value="提交" />
